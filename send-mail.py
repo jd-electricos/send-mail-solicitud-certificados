@@ -143,9 +143,9 @@ for cliente in clientes:
     # ------------------------------
     # Espera entre correos
     # ------------------------------
-    wait_time = random.uniform(2, 5)
-    print(f"⏱ Esperando {wait_time:.2f} minutos...\n")
-    time.sleep(wait_time)
+    wait_time = random.uniform(120, 240)
+    print(f"⏱ Esperando {wait_time/60:.2f} minutos...\n")
+    time.sleep(wait_time)  
 
 # ------------------------------
 # Enviar correo de reporte FINAL
